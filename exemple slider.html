@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #0a82e4;
+  border: solid 1px #0a82;
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+  width: 34%;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+</style>
+</head>
+<body>
+    <center>
+<div id="flip"><font  color=yellow >Cliquez pour faire glisser le panneau vers le panneau vers le bas</font> </div>
+<br>
+<div id="panel"> <font size=10  color=red face=Algerian>bonsoir les étudiants AMEUR salé!</font></div>
+
+</body>
+</html>

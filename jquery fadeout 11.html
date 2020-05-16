@@ -1,0 +1,37 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+                });
+        });
+        
+    </script>
+</head>
+<body>
+    
+    <p> Démonstration fadein avec différent paramétres.</p>
+    <button>Cliquer pour faire apparaitre les boittes </button><br><br>
+    <div id="div1" style="width:100px;height:100px;background-color:red;"></div><br>
+    <div id="div2" style="width:100px;height:100px;background-color:blue;"></div><br>
+    <div id="div3" style="width:100px;height:100px;background-color:rgb(43, 255, 0);"></div>
+   
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
