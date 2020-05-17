@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>accordion</title>
+    </head>
+    <style>
+        body{
+            background-color: rgb(107, 130, 207);
+        }
+        button.accordion{
+            cursor: pointer;
+            border: none;
+            outline: none;
+            width: 100%;
+            text-align: left;
+            background-color: transparent;
+            color: #ffffff;
+            transition: 0.5s;
+            padding: 5px;
+            margin: 4px;
+            border-radius: 5px;
+
+
+        }
+        button.accordion.active{
+            background-color: #fff;
+            color: #000;
+            border-radius: 4px 4px 0 0;
+
+
+        }
+        button.accordion:hover{
+            background-color: rgb(59, 57, 206);
+        }
+        div.panel{
+            background-color: rgb(145, 141, 179);
+            color: #000;
+            border-radius:0 0 4px 4px ;
+            overflow: hidden;
+            opacity: 0;
+            max-height: 0;
+        }
+        div.panel.show{
+            opacity: 1;
+            max-height: 500px;
+
+        }
+
+
+    </style>
+    <script>
+        var accordion=document.querySelectorAll("button.accordion");
+        for(var i=0;i<accordions.length;i++){
+            accordions[i].onclick=function(){
+                this.classlist.toggle("active");
+                this.nextElementSibling.classlist.toggle(show);
+            }
+        }
+    </script>
+    <body>
+        <button class="accordion">title</button>
+        <div class="panel">fghjklfghjkfghjkfghjcgvhcvgbncvbcvb<br>
+        sedrtfgyhjklgvhbjnkvgbhjnkvgbhnjbhjn<br>
+        sedrtfgyhjklgvhbjnkvgbhjnkvgbhnjbhjn
+    
+    
+    </div>
+
+
+        <button class="accordion">title</button>
+        <div class="panel">fghjklfghjkfghjkfghjcgvhcvgbncvbcvb
+            sedrtfgyhjklgvhbjnkvgbhjnkvgbhnjbhjn<br>
+            sedrtfgyhjklgvhbjnkvgbhjnkvgbhnjbhjn
+        
+        
+        </div>
+
+
+        <button class="accordion">title</button>
+        <div class="panel">fghjklfghjkfghjkfghjcgvhcvgbncvbcvb
+            sedrtfgyhjklgvhbjnkvgbhjnkvgbhnjbhjn<br>
+            sedrtfgyhjklgvhbjnkvgbhjnkvgbhnjbhjn
+        
+        
+        </div>
+    </body>
+</html>
